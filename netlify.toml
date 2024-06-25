@@ -1,7 +1,7 @@
 [build]
   base = "comic"
   publish = "comic/dist"
-  command = "npm run dev"
+  command = "npm run build"
 
 [[redirects]]
   from = "/*"
