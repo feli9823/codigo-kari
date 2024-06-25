@@ -3,14 +3,14 @@ const audios = [
   {
     id: 0,
     pagina: 0,
-    imagen: '../../public/Superman.jpg',// asegúrate de que la ruta es correcta
-    audio: '../../public/intro.mp3'// asegúrate de que la ruta es correcta
+    imagen: '/Superman.jpg',// asegúrate de que la ruta es correcta
+    audio: '/intro.mp3'// asegúrate de que la ruta es correcta
   },
   {
     id:1,
     pagina: 1,
-    imagen: '../../public/pag1.jpg',// asegúrate de que la ruta es correcta
-    audio:'../../public/pag1.mp3'// asegúrate de que la ruta es correcta
+    imagen: '/pag1.jpg',// asegúrate de que la ruta es correcta
+    audio:'/pag1.mp3'// asegúrate de que la ruta es correcta
   }
    
   
