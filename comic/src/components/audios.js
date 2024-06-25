@@ -12,7 +12,7 @@ const audios = [
     imagen: '../../public/pag1.jpg',// asegúrate de que la ruta es correcta
     audio:'../../public/pag1.mp3'// asegúrate de que la ruta es correcta
   }
-    
+   
   
   // añade más audios según sea necesario
 ];
