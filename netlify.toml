@@ -1,6 +1,6 @@
 [build]
   base = "comic"
-  publish = "comic/dist"
+  publish = "comic/"
   command = "npm run build"
 
 [[redirects]]
