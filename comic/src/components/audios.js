@@ -3,7 +3,7 @@ const audios = [
   {
     id: 0,
     pagina: 0,
-    imagen: '/Superman.jpg',// asegúrate de que la ruta es correcta
+    imagen: '/kratos.jpg',// asegúrate de que la ruta es correcta
     audio: '/intro.mp3'// asegúrate de que la ruta es correcta
   },
   {
