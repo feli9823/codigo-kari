@@ -22,13 +22,13 @@ html, body {
   width: 100%;
   max-width: 1100px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 1rem; /* Ajustar el padding para reducir espacio */
   background-color: black;
 }
 
 .App h1 {
   color: white;
-  margin-bottom: 20px; /* Añadir un margen inferior */
+  margin-bottom: 10px; /* Reducir el margen inferior */
 }
 
 .botones {
@@ -36,42 +36,42 @@ html, body {
   justify-content: center;
   align-items: center;
   gap: 10px; /* Reducir el espacio entre los botones */
-  margin-top: 20px; /* Espacio arriba de los botones */
+  margin-top: 10px; /* Reducir el espacio arriba de los botones */
   flex-wrap: wrap; /* Permite que los botones se envuelvan en varias líneas si es necesario */
 }
 
 button {
-  width: 100px;
-  height: 80px;
+  width: 80px; /* Reducir ancho de los botones */
+  height: 50px; /* Reducir altura de los botones */
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 10px;
   font-weight: bold; /* Hacer el texto del botón en negrita */
-  font-size: 1rem; /* Ajustar el tamaño de la fuente */
+  font-size: 0.75rem; /* Reducir el tamaño de la fuente */
 }
 
 /* Ajuste de botones para pantallas pequeñas */
 @media (max-width: 600px) {
   button {
     width: 60px; /* Ajustar ancho de los botones */
-    height: 50px; /* Ajustar altura de los botones */
-    font-size: 0.75rem; /* Ajustar tamaño de fuente */
+    height: 40px; /* Ajustar altura de los botones */
+    font-size: 0.65rem; /* Ajustar tamaño de fuente */
   }
 }
 
 .imagenes {
-  width: 100%;
+  width: 100%; /* Ajustar el ancho del contenedor de la imagen */
   max-width: 600px; /* Limitar el ancho máximo para mejorar la apariencia en pantallas grandes */
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 20px; /* Añadir espacio arriba para separar de otros elementos */
+  margin: 10px auto; /* Centrar la imagen horizontalmente */
 }
 
 .imagenes img {
   border-radius: 15px;
-  width: 100%;
+  width: 80%;
   height: auto; /* Ajusta la altura para mantener la proporción */
   object-fit: contain; /* Ajusta la imagen para que se mantenga dentro del contenedor y mantenga su proporción */
 }
@@ -82,4 +82,19 @@ button {
     width: 100%;
     height: auto;
   }
+}
+
+/* Estilos específicos para el botón de reproducción */
+.audio-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.audio-controls button {
+  width: auto;
+  padding: 10px 20px;
+  font-size: 0.75rem;
 }
