@@ -4,14 +4,14 @@ import PropTypes from 'prop-types';
 import audios from './audios';
 import AudioPlayer from './audioplayer';
 
-const AudioPagina = ({ pagina, autoPlay }) => {
+const AudioPagina = ({ pagina, autoPlay,tipoAudio}) => {
   const audioData = audios.find(audio => audio.pagina === pagina);
 
   if (!audioData) {
     return <p>No audio found for this page</p>;
   }
 
-  return <AudioPlayer src={audioData.audio} autoPlay={autoPlay} />;
+  return <AudioPlayer src={audioData[tipoAudio]} autoPlay={autoPlay} />;
 };
 
 AudioPagina.propTypes = {

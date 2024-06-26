@@ -3,14 +3,18 @@ const audios = [
   {
     id: 0,
     pagina: 0,
-    imagen: '/kratos.png',// asegúrate de que la ruta es correcta
-    audio: '/intro.mp3'// asegúrate de que la ruta es correcta
+    imagen: '/Superman.jpg',
+    imagenf:'/Supermanf.jpg',// asegúrate de que la ruta es correcta
+    audio: '/intro.mp3',// asegúrate de que la ruta es correcta
+    audiof:'/introF.mp3'
   },
   {
     id:1,
     pagina: 1,
-    imagen: '/pag1.jpg',// asegúrate de que la ruta es correcta
-    audio:'/pag1.mp3'// asegúrate de que la ruta es correcta
+    imagen: '/pag1.jpg',
+    imagenf:'/pag1f.jpg',                    // asegúrate de que la ruta es correcta
+    audio:'/pag1.mp3',
+    audiof:'/pag1f.mp3'// asegúrate de que la ruta es correcta
   }
    
   
