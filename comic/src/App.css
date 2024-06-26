@@ -71,7 +71,7 @@ button {
 
 .imagenes img {
   border-radius: 15px;
-  width: 100%; /* Cambiar a 100% para que la imagen se ajuste al contenedor */
+  width: 80%; /* Cambiar a 100% para que la imagen se ajuste al contenedor */
   height: auto; /* Ajusta la altura para mantener la proporción */
   object-fit: contain; /* Ajusta la imagen para que se mantenga dentro del contenedor y mantenga su proporción */
 }
@@ -85,16 +85,3 @@ button {
 }
 
 /* Estilos específicos para el botón de reproducción */
-.audio-controls {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-.audio-controls button {
-  width: auto;
-  padding: 10px 20px;
-  font-size: 0.75rem;
-}
