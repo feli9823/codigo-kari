@@ -71,7 +71,7 @@ button {
 
 .imagenes img {
   border-radius: 15px;
-  width: 80%;
+  width: 100%; /* Cambiar a 100% para que la imagen se ajuste al contenedor */
   height: auto; /* Ajusta la altura para mantener la proporción */
   object-fit: contain; /* Ajusta la imagen para que se mantenga dentro del contenedor y mantenga su proporción */
 }
