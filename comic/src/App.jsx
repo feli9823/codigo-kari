@@ -30,9 +30,11 @@ function App() {
 
   const handlePrev = () => {
     setPagina((prevPagina) => (prevPagina - 1 + audios.length) % audios.length);
-    
+    if(pagina===0){
+      setPagina(0);
+    }
   };
-  
+   
   useEffect(() => {
     const swalWithBootstrapButtons = Swal.mixin({
       customClass: {
