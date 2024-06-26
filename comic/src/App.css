@@ -28,16 +28,16 @@ html, body {
 
 .App h1 {
   color: white;
+  margin-bottom: 20px; /* Añadir un margen inferior */
 }
 
 .botones {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px; /* Espacio entre los botones */
+  gap: 10px; /* Reducir el espacio entre los botones */
   margin-top: 20px; /* Espacio arriba de los botones */
-  font-weight: bold;
-  
+  flex-wrap: wrap; /* Permite que los botones se envuelvan en varias líneas si es necesario */
 }
 
 button {
@@ -47,39 +47,33 @@ button {
   justify-content: center;
   align-items: center;
   border-radius: 10px;
-  font-weight: bold; /* Add this line to make the button text bold */
-}
-
-.imagenes {
-  width: 80%;
-  height: 80%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.imagenes img {
-  border-radius: 15px;
-  width: 100%;
-  height: 100%; /* Ajusta la altura para ocupar toda la pantalla */
-  object-fit: contain; /* Ajusta la imagen para que se mantenga dentro del contenedor y mantenga su proporción */
+  font-weight: bold; /* Hacer el texto del botón en negrita */
+  font-size: 1rem; /* Ajustar el tamaño de la fuente */
 }
 
 /* Ajuste de botones para pantallas pequeñas */
 @media (max-width: 600px) {
   button {
-    width: 80px;
-    height: 60px;
-    font-size: 0.875rem;
+    width: 60px; /* Ajustar ancho de los botones */
+    height: 50px; /* Ajustar altura de los botones */
+    font-size: 0.75rem; /* Ajustar tamaño de fuente */
   }
 }
 
 .imagenes {
-  width: 80%;
-  height: 80%;
+  width: 100%;
+  max-width: 600px; /* Limitar el ancho máximo para mejorar la apariencia en pantallas grandes */
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 20px; /* Añadir espacio arriba para separar de otros elementos */
+}
+
+.imagenes img {
+  border-radius: 15px;
+  width: 100%;
+  height: auto; /* Ajusta la altura para mantener la proporción */
+  object-fit: contain; /* Ajusta la imagen para que se mantenga dentro del contenedor y mantenga su proporción */
 }
 
 /* Ajuste de contenedor de imágenes para pantallas pequeñas */
@@ -88,11 +82,4 @@ button {
     width: 100%;
     height: auto;
   }
-}
-
-.imagenes img {
-  border-radius: 15px;
-  width: 100%;
-  height: 100%; /* Ajusta la altura para ocupar toda la pantalla */
-  object-fit: contain; /* Ajusta la imagen para que se mantenga dentro del contenedor y mantenga su proporción */
 }

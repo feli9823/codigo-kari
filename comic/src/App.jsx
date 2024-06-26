@@ -49,7 +49,7 @@ function App() {
       icon: "question",
       showCancelButton: true,
       confirmButtonColor: "#3085d6",
-      confirmButtonText: "Francois",
+      confirmButtonText: "Français",
       cancelButtonText: "Español",
       reverseButtons: true
     }).then((result) => {
