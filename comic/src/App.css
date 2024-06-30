@@ -22,41 +22,93 @@ html, body {
   width: 100%;
   max-width: 1100px;
   margin: 0 auto;
-  padding: 1rem; /* Ajustar el padding para reducir espacio */
+  padding: 0.5rem; /* Reducir el padding para pantallas pequeñas */
   background-color: black;
 }
 
 .App h1 {
   color: white;
-  margin-bottom: 10px; /* Reducir el margen inferior */
+  margin-bottom: 5px; /* Reducir el margen inferior */
+  font-size: 1.25rem; /* Reducir tamaño de la fuente */
 }
 
+/* Contenedor de botones */
 .botones {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px; /* Reducir el espacio entre los botones */
-  margin-top: 10px; /* Reducir el espacio arriba de los botones */
-  flex-wrap: wrap; /* Permite que los botones se envuelvan en varias líneas si es necesario */
+  gap: 8px; /* Reducir el espacio entre los botones */
+  margin-top: 15px; /* Reducir el espacio arriba de los botones */
+  
+}
+
+.botones .btn.btn-light{
+  font-size: 40px;
+  font-weight: bold;
+  justify-content: center;
+  line-height: 1;
+  padding: 1px 1px 0 1px;
+}
+
+.botones .btn.btn-success{
+  font-size: 20px;
+  font-weight: bold;
+  justify-content: center;
+  padding: 2px;
+  width: 120px;
 }
 
 button {
-  width: 80px; /* Reducir ancho de los botones */
-  height: 50px; /* Reducir altura de los botones */
+  width: 70px; /* Reducir ancho de los botones */
+  height: 40px; /* Reducir altura de los botones */
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 10px;
+  border-radius: 8px;
   font-weight: bold; /* Hacer el texto del botón en negrita */
-  font-size: 0.75rem; /* Reducir el tamaño de la fuente */
+  font-size: 0.75rem; /* Reducir el tamaño de la fuente */ 
+  text-align: center; /* Centrar el texto */
+  padding: 2px; /* Reducir padding para asegurar que el texto no se salga del marco */
 }
 
-/* Ajuste de botones para pantallas pequeñas */
+/* Ajuste de botones y otros elementos para pantallas pequeñas */
 @media (max-width: 600px) {
-  button {
-    width: 60px; /* Ajustar ancho de los botones */
-    height: 40px; /* Ajustar altura de los botones */
-    font-size: 0.65rem; /* Ajustar tamaño de fuente */
+  .App {
+    padding: 0.25rem; /* Reducir aún más el padding para pantallas pequeñas */
+  }
+  
+  .App h1 {
+    font-size: 1.25rem; /* Reducir tamaño de la fuente del título */
+    margin-bottom: 3px; /* Reducir margen inferior del título */
+  }
+  
+  .botones {
+    gap: 3px; /* Reducir aún más el espacio entre los botones */
+    margin-top: 3px; /* Reducir margen superior */
+  }
+  
+  .botones .btn.btn-light {
+    width: 80px; /* Ajustar ancho de los botones */
+    height: 35px; /* Ajustar altura de los botones */
+    font-size: 2rem; /* Ajustar tamaño de fuente */
+    padding: 1px 1px 0 1px;
+    line-height: 1;
+    justify-content: center;
+    align-items: flex-start; /* Reducir padding para asegurar que el texto no se salga del marco */
+  }
+  .botones .btn.btn-success{
+    width: 110px; /* Ajustar ancho de los botones */
+    height: 35px; /* Ajustar altura de los botones */
+    font-size: 1.25rem;
+    font-weight: bold; /* Ajustar tamaño de fuente */
+    padding: 1px;
+    justify-content: center;
+    padding: line-height ; /* Reducir padding para asegurar que el texto no se salga del marco */
+  }
+
+  .imagenes img {
+    width: 90%; /* Ajustar el ancho de la imagen al 90% del contenedor */
+    height: auto; /* Ajustar altura automáticamente para mantener la proporción */
   }
 }
 
@@ -66,22 +118,13 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 10px auto; /* Centrar la imagen horizontalmente */
+  margin: 5px auto; /* Centrar la imagen horizontalmente */
 }
 
 .imagenes img {
   border-radius: 15px;
-  width: 80%; /* Cambiar a 100% para que la imagen se ajuste al contenedor */
+  width: 80%; /* Mantener el ancho de la imagen en 80% */
   height: auto; /* Ajusta la altura para mantener la proporción */
   object-fit: contain; /* Ajusta la imagen para que se mantenga dentro del contenedor y mantenga su proporción */
 }
 
-/* Ajuste de contenedor de imágenes para pantallas pequeñas */
-@media (max-width: 600px) {
-  .imagenes {
-    width: 100%;
-    height: auto;
-  }
-}
-
-/* Estilos específicos para el botón de reproducción */

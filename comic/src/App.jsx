@@ -45,7 +45,7 @@ function App() {
 
     swalWithBootstrapButtons.fire({
       title: "Selecciona el Idioma",
-      text: "Sélectionnez la langue",
+      text: "Sélectionnez la langue ",
       icon: "question",
       showCancelButton: true,
       confirmButtonColor: "#3085d6",
@@ -75,9 +75,9 @@ function App() {
         </div>
 
         <div className="botones">
-          <button type="button" className="btn btn-light" onClick={handlePrev} style={{ fontSize: '40px',fontWeight:'bold' }}>&lt;</button>
-          <button type="button" className="btn btn-light" onClick={handleNext}  style={{ fontSize: '40px', fontWeight:'bold'}}>&gt;</button>
-          <button type="button" className="btn btn-success" onClick={() => handlePlayAudio(audios[pagina])} style={{ fontSize: '20px',fontWeight:'bold',width:'20%' }}>{Boton}</button>
+          <button type="button" className="btn btn-light" onClick={handlePrev} >&lt;</button>
+          <button type="button" className="btn btn-light" onClick={handleNext} >&gt;</button>
+          <button type="button" className="btn btn-success" onClick={() => handlePlayAudio(audios[pagina])} >{Boton}</button>
         
           
         </div>

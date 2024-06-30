@@ -6,6 +6,7 @@ import AudioPlayer from './audioplayer';
 
 const AudioPagina = ({ pagina, autoPlay,tipoAudio}) => {
   const audioData = audios.find(audio => audio.pagina === pagina);
+  console.log(audioData)
 
   if (!audioData) {
     return <p>No audio found for this page</p>;

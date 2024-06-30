@@ -8,6 +8,7 @@ const AudioPlayer = ({ src, autoPlay }) => {
   const [pausado, setPausado] = useState(true);
 
   useEffect(() => {
+    console.log(src)
     if (autoPlay && audioRef.current) {
       audioRef.current.currentTime = 0;  // Reinicia el audio
       audioRef.current.play();
